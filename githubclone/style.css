@@ -1,0 +1,38 @@
+/* 초기화 */
+body{
+  margin: 0;
+  padding: 0;
+}
+/* default width: auto(100%); height: auto(0에서 늘어나도록 설정됨); */
+.header{ /*header*/
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+.container{
+  width: 980px;
+  margin: auto; /*600px만큼 화면 중앙으로 배치*/
+}
+.container-left{
+  padding-top: 20px; /*padding은 최상위 요소보다는 적용 후 가장 효과를 볼 수 있는 요소로 지정*/
+  padding-bottom: 20px;
+}
+/* 로고와 메뉴를 수평으로 만들기*/
+.logo{
+  float: left;
+  margin-right: 5px;
+}
+.logo img{ /*이미지 자리차지 없애기*/
+  display: block;
+}
+.menu{
+  float: left;
+}
+.menu-item{
+  float: left; /*div를 수평으로*/
+  padding: 8px 10px; /*위아래 오왼*/
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
